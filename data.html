@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Buku - SIP</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="navbar-inner">
+
+            <a href="index.html" class="logo">
+                📚 SIP
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Beranda</a></li>
+
+                    <li><a href="data.html" class="active">
+                        Data Buku
+                    </a></li>
+
+                    <li><a href="pinjam.html">
+                        Peminjaman
+                    </a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero halaman">
+
+        <h1>Data Buku Perpustakaan</h1>
+
+        <p>
+            Daftar koleksi buku yang tersedia di
+            perpustakaan.
+        </p>
+
+    </section>
+
+    <!-- ================= TABEL ================= -->
+
+    <section class="card-table">
+
+        <div class="table-header">
+
+            <h2>Daftar Buku</h2>
+
+            <input
+                type="text"
+                id="cariBuku"
+                placeholder="🔍 Cari judul buku...">
+
+        </div>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Judul Buku</th>
+                    <th>Penulis</th>
+                    <th>Kategori</th>
+                    <th>Stok</th>
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tbodyBuku">
+
+                <tr>
+                    <td>1</td>
+                    <td>BK001</td>
+                    <td>Pemrograman Web</td>
+                    <td>Abdul Kadir</td>
+                    <td>Teknologi</td>
+                    <td>12</td>
+                    <td><span class="status tersedia">Tersedia</span></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>BK002</td>
+                    <td>Basis Data</td>
+                    <td>Fathansyah</td>
+                    <td>Teknologi</td>
+                    <td>8</td>
+                    <td><span class="status dipinjam">Dipinjam</span></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>BK003</td>
+                    <td>Algoritma</td>
+                    <td>Rosa A.S</td>
+                    <td>Teknologi</td>
+                    <td>10</td>
+                    <td><span class="status tersedia">Tersedia</span></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>BK004</td>
+                    <td>Jaringan Komputer</td>
+                    <td>Kurniawan</td>
+                    <td>Teknologi</td>
+                    <td>5</td>
+                    <td><span class="status tersedia">Tersedia</span></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>BK005</td>
+                    <td>Kecerdasan Buatan</td>
+                    <td>Sutarman</td>
+                    <td>Artificial Intelligence</td>
+                    <td>3</td>
+                    <td><span class="status dipinjam">Dipinjam</span></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>BK006</td>
+                    <td>Rekayasa Perangkat Lunak</td>
+                    <td>Pressman</td>
+                    <td>Teknologi</td>
+                    <td>9</td>
+                    <td><span class="status tersedia">Tersedia</span></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>&copy; 2026 Sistem Informasi Perpustakaan — Treatment | 241120734 | Valencia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

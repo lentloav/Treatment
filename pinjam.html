@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminjaman Buku - SIP</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="navbar-inner">
+
+            <a href="index.html" class="logo">
+                📚 SIP
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+
+                <ul class="nav-menu">
+
+                    <li><a href="index.html">Beranda</a></li>
+
+                    <li><a href="data.html">Data Buku</a></li>
+
+                    <li><a href="pinjam.html" class="active">
+                        Peminjaman
+                    </a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero halaman">
+
+        <h1>Peminjaman Buku</h1>
+
+        <p>
+            Isi data peminjaman buku perpustakaan dengan mudah dan cepat.
+        </p>
+
+    </section>
+
+    <!-- ================= FORM ================= -->
+
+    <section class="card-form">
+
+        <h2>Form Peminjaman</h2>
+
+        <form id="formPinjam">
+
+            <div class="grid-2">
+
+                <div class="form-group">
+                    <label>Nama Peminjam</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama peminjam" required>
+                </div>
+
+                <div class="form-group">
+                    <label>NIM</label>
+                    <input type="text" id="nim" placeholder="Masukkan NIM" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Judul Buku</label>
+
+                    <select id="buku">
+
+                        <option>Pemrograman Web</option>
+                        <option>Basis Data</option>
+                        <option>Algoritma</option>
+                        <option>Jaringan Komputer</option>
+                        <option>Kecerdasan Buatan</option>
+                        <option>Rekayasa Perangkat Lunak</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Pinjam</label>
+                    <input type="date" id="tglPinjam" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Tanggal Kembali</label>
+                    <input type="date" id="tglKembali" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Status</label>
+                    <select id="status">
+                        <option>Dipinjam</option>
+                        <option>Dikembalikan</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="button-group">
+
+                <button type="submit" class="btn-primary">
+                    📚 Pinjam Buku
+                </button>
+
+                <button type="reset" class="btn-secondary">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </section>
+
+    <!-- ================= RIWAYAT ================= -->
+
+    <section class="card-table">
+
+        <div class="table-header">
+
+            <h2>Riwayat Peminjaman</h2>
+
+            <input type="text"
+                   id="cariPinjam"
+                   placeholder="🔍 Cari nama...">
+
+        </div>
+
+        <table>
+
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+                <th>Buku</th>
+                <th>Tgl Pinjam</th>
+                <th>Tgl Kembali</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+            </thead>
+
+            <tbody id="tbodyPinjam">
+            </tbody>
+
+        </table>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>&copy; 2026 Sistem Informasi Perpustakaan — Treatment | 241120734 | Valencia</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
